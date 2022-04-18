@@ -33,7 +33,11 @@ module.exports = {
         publicPath: '/'
     },
     devServer: {
-        allowedHosts: 'all'
+        allowedHosts: 'all',
+        compress: true,
+        port: 3000,
+        open: true,
+        hot: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
